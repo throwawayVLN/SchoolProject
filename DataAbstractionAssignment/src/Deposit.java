@@ -1,9 +1,9 @@
 import java.util.Date;
 
 public class Deposit {
-    private double amount;
-    private Date date;
-    private String account;
+    public double amount;
+    public Date date;
+    public String account;
 
     Deposit(double amount, Date date, String account){
         this.amount = amount;
@@ -11,8 +11,10 @@ public class Deposit {
         this.account = account;
     }
 
+    /*
+        Effects: returns a string displaying the deposit
+     */
     public String toString(){
-        //your code here
-        return "";
+        return "Deposit of: $" + amount + " Date: " + date + " into account: " + account;
     }
 }
